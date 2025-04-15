@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libros SYSTEM "facturas.dtd">
+<facturas>
+  <factura>
+    <cliente numCliente="C001" nacionalidad="española" sexo="hombre">
+      <nombreCliente>Nombre 1</nombreCliente>
+      <apellidosCliente>Apellidos 1</apellidosCliente>
+      <dirsCliente>
+        <direccion>Dirección 1-1</direccion>
+        <direccion>Dirección 1-2</direccion>
+      </dirsCliente>
+      <telefono tipo="fijo">12345678</telefono>
+    </cliente>
+    <productos>
+      <producto numProducto="PR001">
+        <nombre>Producto 1</nombre>
+        <descProducto>Descripcion de producto 1</descProducto>
+        <precioUnitarioProd>12 euros;</precioUnitarioProd>
+      </producto>
+      <producto numProducto="PR002">
+        <nombre>Producto 2</nombre>
+        <descProducto>Descripcion de producto 2</descProducto>
+        <precioUnitarioProd>10 euros;</precioUnitarioProd>
+      </producto>
+    </productos>
+    <pedido numPedido="PE001" fechaPedido="2025-01-01" pNumCliente="C001" totalPagarPedido="22">
+      <pNumProducto cantidadProd="1">PR001</pNumProducto>
+      <pNumProducto cantidadProd="1">PR002</pNumProducto>
+    </pedido>
+  </factura>
+  <factura>
+    <cliente numCliente="C002" nacionalidad="frances" sexo="mujer">
+          <nombreCliente>Nombre 2</nombreCliente>
+      <apellidosCliente>Apellidos 2</apellidosCliente>
+      <dirsCliente>
+        <direccion>Dirección 2-1</direccion>
+        <direccion>Dirección 2-2</direccion>
+      </dirsCliente>
+      <telefono tipo="movil">12345678</telefono>
+    </cliente>
+    <productos>
+      <producto numProducto="PR002">
+        <nombre>Producto 2</nombre>
+        <descProducto>Descripcion de producto 2</descProducto>
+        <precioUnitarioProd>10 euros;</precioUnitarioProd>
+      </producto>
+      <producto numProducto="PR003">
+        <nombre>Producto 3</nombre>
+        <descProducto>Descripcion de producto 3</descProducto>
+        <precioUnitarioProd>15 euros;</precioUnitarioProd>
+      </producto>
+    </productos>
+    <pedido numPedido="PE002" fechaPedido="2025-01-02" pNumCliente="C002" totalPagarPedido="25">
+      <pNumProducto cantidadProd="1">PR002</pNumProducto>
+      <pNumProducto cantidadProd="1">PR003</pNumProducto>
+    </pedido>
+  </factura>
+</facturas>

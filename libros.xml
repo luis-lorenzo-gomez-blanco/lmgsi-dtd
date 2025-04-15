@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libros SYSTEM "libros.dtd">
+<libros>
+  <libro codigo="L001" tipo="tapaDura">
+    <titulo>Parque Jurásico</titulo>
+    <edicion>1</edicion>
+    <editorial>Altaya</editorial>
+    <isbn>1234567890</isbn>
+    <paginas>355</paginas>
+    <autores>
+      <autor>Michael Critchton</autor>  
+    </autores>
+  </libro>
+  <libro codigo="L002" tipo="tapaBlanda">
+    <titulo>Yo, robot</titulo>
+    <edicion>3</edicion>
+    <editorial>Timun Mas</editorial>
+    <isbn>0987654321</isbn>
+    <paginas>230</paginas>
+    <autores>
+      <autor>Isaac Asimov</autor>  
+    </autores>
+  </libro>
+  <libro codigo="L003" tipo="bolsillo">
+    <titulo>El lazarillo de Tormes</titulo>
+    <edicion>5</edicion>
+    <editorial>SM</editorial>
+    <isbn>0000000000</isbn>
+    <paginas>125</paginas>
+    <autores>
+    </autores>
+  </libro>
+</libros>

@@ -1,0 +1,26 @@
+<!ELEMENT facturas (factura)*>
+<!ELEMENT factura (cliente,productos,pedido)>
+<!ELEMENT cliente (nombreCliente,apellidosCliente,dirsCliente,telefono)>
+<!ATTLIST cliente numCliente ID #REQUIRED 
+    nacionalidad CDATA "español"
+    sexo (hombre|mujer) #REQUIRED>
+<!ELEMENT nombreCliente (#PCDATA)>
+<!ELEMENT apellidosCliente (#PCDATA)>
+<!ELEMENT dirsCliente (direccion+)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ATTLIST telefono tipo (fijo|movil) #REQUIRED>
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (nombre,descProducto,precioUnitarioProd)>
+<!ATTLIST producto numProducto ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descProducto (#PCDATA)>
+<!ELEMENT precioUnitarioProd (#PCDATA)>
+<!ELEMENT pedido (pNumProducto+)>
+<!ATTLIST pedido numPedido ID #REQUIRED
+    fechaPedido CDATA #IMPLIED
+    pNumCliente IDREF #REQUIRED
+    totalPagarPedido CDATA #REQUIRED>
+<!ELEMENT pNumProducto (#PCDATA)>
+<!ATTLIST pNumProducto cantidadProd CDATA>
+<!-- <!ENTITY euros "&#x20ac;"> -->

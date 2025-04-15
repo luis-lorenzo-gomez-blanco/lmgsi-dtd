@@ -1,0 +1,11 @@
+<!ELEMENT libros (libro)*>
+<!ELEMENT libro (titulo,edicion,editorial,isbn,paginas,autores)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT edicion (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT paginas (#PCDATA)>
+<!ELEMENT autores (autor*)>
+<!ELEMENT autor (#PCDATA)>
+<!ATTLIST libro codigo ID #REQUIRED
+    tipo (tapaDura|tapaBlanda|bolsillo) "bolsillo">

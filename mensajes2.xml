@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mensajes SYSTEM "mensajes2.dtd">
+<mensajes>
+  <mensaje fecha="2025-01-01" hora="18:00">
+    <persona>Roberto Pérez</persona>
+    <texto>Hola, ¿qué tal?</texto>
+    <texto>Hace tiempo que no hablamos, ¿qué te cuentas?</texto>
+  </mensaje>
+  <mensaje fecha="2025-01-01" hora="18:10">
+    <persona>Verónica García</persona>
+    <texto>Vamos a salir a tomar algo, ¿te apuntas?</texto>
+  </mensaje>
+</mensajes>

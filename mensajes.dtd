@@ -1,0 +1,6 @@
+<!ELEMENT mensajes (mensaje)*>
+<!ELEMENT mensaje (persona,texto)>
+<!ELEMENT persona (#PCDATA)>
+<!ELEMENT texto (#PCDATA)>
+<!ATTLIST mensaje fecha CDATA #REQUIRED
+    hora CDATA #REQUIRED>
